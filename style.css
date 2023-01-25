@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik';
+    font-weight: 20;
+}
+body{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+.header-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+    width: 100%;
+    height: 30%;
+    padding: 20px;
+    background-image: url("./assets/pattern-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head-text{
+    font-weight: 400;
+    color: white;
+}
+.search-bar{
+    display: flex;
+}
+
+.search-input{
+    height: 50px;
+    width: 400px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 15px;
+}
+.search-button{
+    background-color: black;
+    width: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-left: 320px;
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    height: 20%;
+    border-radius: 10px;
+    position: absolute;
+    top: 25%;
+    z-index: 1;
+}
+.info-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info-box-title{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: #969696;
+}
+.info-box-content{
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: -0.008em;
+    color: #2B2B2B;
+}
+.location-info{
+    margin-top: 5px;
+}
+.location-title{
+    margin-top: 23px;
+}
+.hr{
+    display: flex;
+    width: 0px;
+    height: 60px;
+}
+.map-image{
+    z-index: 0;
+    overflow: none;
+    width: 100vw;
+    height: 480px;
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+    
+    
+}
