@@ -13,32 +13,36 @@
 <!-- ######################## HEADER ######################## -->
   <div class="header-box">
     <h1 class="head-text">IP Address Tracker</h1>
-    <form >
+
       <div class="search-bar">
         <input id="inputId" class="search-input" placeholder="  Search for any IP address or domain"> </input>
         <button id="buttonId" class="search-button"> <img src="./assets/icon-arrow.svg"/> </button>
       </div>
-    </form>
+
   </div>
 
 <!-- ######################## INFORMATION ######################## -->
   <div class="information">
+    <!-- ## IP ## -->
       <div class="info-box" id="ipAddress">
         <div class="info-box-title">IP Address</div>
         <div class="info-box-content" id="ipAddressId" ></div>
       </div>
       <hr class="hr">
+    <!-- ## LOCATION ## -->
       <div class="info-box location-info" id="location">
         <div class="info-box-title location-title">Location</div>
         <div class="info-box-content" id="locationId"></div>
         <div id="postalCode" class="info-box-content"> </div>
       </div>
       <hr class="hr">
+    <!-- ## TIME ZONE ## -->
       <div class="info-box" id="timezone">
         <div class="info-box-title">Timezone</div>
         <div class="info-box-content" id="timezoneId"> </div>
       </div>
       <hr class="hr">
+    <!-- ## ISP ## -->
       <div class="info-box" id="isp">
         <div class="info-box-title">ISP</div>
         <div class="info-box-content" id="ispId"></div>
@@ -46,15 +50,14 @@
   </div>
 
 <!-- ######################## MAP ######################## -->
-  <!-- <div class="map"> -->
   <div id="map" class="map-image"></div>
   
-  <!-- #################### ATTRIBUTION #################### -->
-
+<!-- #################### ATTRIBUTION #################### -->
   <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Esther Abasov</a>.
   </div>
+
 
 <script type="module" src="./main.js"></script>
 <script
