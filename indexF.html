@@ -4,9 +4,11 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css"> 
   <title>IP Address Tracker</title>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <link rel="stylesheet" href="./style.css"> 
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+  integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+  crossorigin=""/>
 </head>
 <body>
 
@@ -50,7 +52,7 @@
   </div>
 
 <!-- ######################## MAP ######################## -->
-  <div id="map" class="map-image"></div>
+  <div id="map" class="map"></div>
   
 <!-- #################### ATTRIBUTION #################### -->
   <div class="attribution">
@@ -59,10 +61,10 @@
   </div>
 
 
-<script type="module" src="./main.js"></script>
-<script
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer >
-</script>
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+  integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+  crossorigin=""></script>
+  <script type="module" src="./main.js"></script>
 
 
 </body>

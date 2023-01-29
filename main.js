@@ -1,20 +1,7 @@
 let inputFromUser = ""
 getFetch("")
 
-let map;
-function initMap(lat,lng) {
-    const mapId = document.getElementById("map");
-    map = new google.maps.Map(mapId, {
-        center: { lat: lat, lng: lng },
-        zoom: 11,
-    });
 
-    const marker = new google.maps.Marker({
-        position: { lat: lat, lng: lng },
-        map: map,
-        icon: ("./assets/icon-location.svg"),
-    });
-}
 
 const buttonInput = document.getElementById('buttonId');
 buttonInput.addEventListener('click',(e)=>handlingTheEventAndSaveData(e));
@@ -44,10 +31,16 @@ async function getFetch(inputFromUser){
     }})
     .then((data)=>{
         createInformationBox(data);
-        initMap(data.location.lat,data.location.lng);
+        let map = L.map('map').setView([data.location.lat, data.location.lng], 13);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+             maxZoom: 19,
+             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+         }).addTo(map);
+ 
+     })
 
-    })
-}
+    }
+
 
 
 function createInformationBox(objectOfData) {

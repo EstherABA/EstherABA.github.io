@@ -93,7 +93,7 @@ body{
     width: 0px;
     height: 60px;
 }
-.map-image{
+.map{
     z-index: 0;
     overflow: none;
     width: 100vw;
